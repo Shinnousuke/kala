@@ -244,24 +244,24 @@ window.addEventListener("scroll", function() {
 
 const worksImages = [
 
-    "trial/18.jpg",
-    "trial/2.jpg",
-    "trial/7.jpg",
-    "trial/12.jpg",
-    "trial/1.jpg",
-    "trial/12.jpg",
-    "trial/9.jpg",
-    "trial/16.jpg",
-    "trial/8.jpg",
-    "trial/10.jpg",
-    "trial/2.jpg",
-    "trial/3.jpg",
-    "trial/4.jpg",
-    "trial/5.jpg",
-    "trial/6.jpg",
-    "trial/7.jpg",
-    "trial/8.jpg",
-    "trial/9.jpg"
+    "18.jpg",
+    "2.jpg",
+    "7.jpg",
+    "12.jpg",
+    "1.jpg",
+    "12.jpg",
+    "9.jpg",
+    "16.jpg",
+    "8.jpg",
+    "10.jpg",
+    "2.jpg",
+    "3.jpg",
+    "4.jpg",
+    "5.jpg",
+    "6.jpg",
+    "7.jpg",
+    "8.jpg",
+    "9.jpg"
     
 
 ];
