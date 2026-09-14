@@ -241,9 +241,7 @@ window.addEventListener("scroll", function() {
    C:\Chinu_projects\...
 */
 
-
 const worksImages = [
-
     "18.jpg",
     "2.jpg",
     "7.jpg",
@@ -262,10 +260,7 @@ const worksImages = [
     "7.jpg",
     "8.jpg",
     "9.jpg"
-    
-
 ];
-
 
 const worksTitles = [
 
