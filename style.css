@@ -1966,13 +1966,13 @@ footer {
 
 }
 /* =====================================================
-   PROFESSIONAL TOOLS BANNERS
+   PROFESSIONAL TOOLS SECTION
    ===================================================== */
 
 .professional-tools-section {
     width: 100%;
-    padding: 0;
     margin: 0;
+    padding: 0;
     background: #e8dfd4;
 }
 
@@ -1983,34 +1983,37 @@ footer {
 }
 
 
-/* ---------- EACH BANNER ---------- */
+/* ================= BANNER CARD ================= */
 
 .tool-banner-card {
     position: relative;
-    min-height: 270px;
+    height: 400px;
 
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 
     overflow: hidden;
 }
 
 
-/* ---------- LEFT IMAGE ---------- */
+/* ================= LEFT IMAGE ================= */
 
 .tool-banner-left {
-    background-image: url("C:\Chinu_projects\Desktop\FS_1_\nail_art\trial\m.jpg");
+    background-image: url("m.jpg");
 }
 
 
-/* ---------- RIGHT IMAGE ---------- */
+/* ================= RIGHT IMAGE ================= */
 
 .tool-banner-right {
-    background-image: url("C:\Chinu_projects\Desktop\FS_1_\nail_art\trial\m2.jpg");
+    background-image: url("m2.jpg");
 }
 
 
-/* ---------- SOFT OVERLAY ---------- */
+/* ================= IMAGE OVERLAY ================= */
+/* Keeps the text readable while allowing the image
+   to remain clearly visible */
 
 .tool-banner-card::before {
     content: "";
@@ -2019,91 +2022,91 @@ footer {
 
     background: linear-gradient(
         90deg,
-        rgba(245, 237, 227, 0.92) 0%,
-        rgba(245, 237, 227, 0.70) 35%,
-        rgba(245, 237, 227, 0.10) 75%
+        rgba(245, 237, 227, 0.88) 0%,
+        rgba(245, 237, 227, 0.55) 35%,
+        rgba(245, 237, 227, 0.05) 75%
     );
 
     z-index: 1;
 }
 
 
-/* ---------- TEXT ---------- */
+/* ================= TEXT ================= */
 
 .tool-banner-content {
     position: relative;
     z-index: 2;
 
-    padding: 38px 35px;
-
-    color: #211b17;
+    padding: 55px 53px;
 }
-
 
 .tool-small-title {
     display: block;
 
     font-family: Arial, sans-serif;
-    font-size: 10px;
+    font-size: 13px;
     font-weight: 600;
 
-    letter-spacing: 1.5px;
+    letter-spacing: 2px;
 
-    margin-bottom: 10px;
+    margin-bottom: 18px;
+
+    color: #111;
 }
 
 
 .tool-banner-content h2 {
-    margin: 0 0 22px;
+    margin: 0 0 32px;
 
     font-family: Georgia, "Times New Roman", serif;
 
-    font-size: 25px;
+    font-size: 38px;
     font-weight: 400;
 
-    line-height: 1.15;
+    line-height: 1.08;
+
+    color: #111;
 }
 
 
-/* ---------- BUTTON ---------- */
+/* ================= BUTTON ================= */
 
 .tool-shop-btn {
     display: inline-block;
 
-    padding: 8px 15px;
+    padding: 12px 23px;
 
-    border: 1px solid #6c5b4d;
+    border: 1px solid #5d4c40;
 
-    background: rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.15);
 
-    color: #332820;
+    color: #241b16;
 
     text-decoration: none;
 
     font-family: Arial, sans-serif;
 
-    font-size: 9px;
-    letter-spacing: 0.8px;
+    font-size: 12px;
+
+    letter-spacing: 1px;
 
     transition: all 0.3s ease;
 }
 
-
 .tool-shop-btn:hover {
-    background: #332820;
-    color: #fff;
-    border-color: #332820;
+    background: #241b16;
+    color: white;
 }
 
 
-/* ---------- RIGHT BANNER TEXT ---------- */
+/* ================= RIGHT SIDE ================= */
 
 .tool-banner-right .tool-banner-content {
-    padding-left: 35px;
+    padding-left: 53px;
 }
 
 
-/* ---------- MOBILE ---------- */
+/* ================= MOBILE ================= */
 
 @media (max-width: 768px) {
 
@@ -2112,15 +2115,14 @@ footer {
     }
 
     .tool-banner-card {
-        min-height: 240px;
+        height: 330px;
     }
 
     .tool-banner-content {
-        padding: 30px 25px;
+        padding: 40px 30px;
     }
 
     .tool-banner-content h2 {
-        font-size: 23px;
+        font-size: 30px;
     }
-
 }
