@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KALA | Professional Nail Care</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- =====================================================
+     NAVBAR
+===================================================== -->
+
+<header class="navbar">
+
+    <div class="logo-area">
+
+        <div class="logo-circle">
+            LN
+        </div>
+
+        <div class="logo-text">
+            <h2>KALA</h2>
+            <span>PROFESSIONAL NAIL CARE</span>
+        </div>
+
+    </div>
+
+
+    <nav class="nav-links">
+
+        <a href="#shop">SHOP</a>
+        <a href="#collections">COLLECTIONS</a>
+        <a href="#learn">LEARN</a>
+        <a href="#about">ABOUT</a>
+        <a href="#journal">JOURNAL</a>
+
+    </nav>
+
+
+    <div class="nav-icons">
+
+        <i class="fa-solid fa-magnifying-glass"
+           onclick="openSearch()"></i>
+
+        <i class="fa-regular fa-user"></i>
+
+        <div class="cart-icon" onclick="openCart()">
+
+            <i class="fa-solid fa-bag-shopping"></i>
+
+            <span id="cartCount">2</span>
+
+        </div>
+
+        <i class="fa-solid fa-bars menu-icon"
+           onclick="toggleMenu()"></i>
+
+    </div>
+
+</header>
+
+
+<!-- =====================================================
+     MOBILE MENU
+===================================================== -->
+
+<div class="mobile-menu" id="mobileMenu">
+
+    <a href="#shop">SHOP</a>
+    <a href="#collections">COLLECTIONS</a>
+    <a href="#learn">LEARN</a>
+    <a href="#about">ABOUT</a>
+    <a href="#journal">JOURNAL</a>
+
+</div>
+
+
+
+<!-- =====================================================
+     SEARCH POPUP
+===================================================== -->
+
+<div class="search-box" id="searchBox">
+
+    <div class="search-content">
+
+        <button onclick="closeSearch()">×</button>
+
+        <h2>What are you looking for?</h2>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search nail products..."
+        >
+
+        <button class="search-button"
+                onclick="performSearch()">
+
+            SEARCH
+
+        </button>
+
+        <p id="searchMessage"></p>
+
+    </div>
+
+</div>
+
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+<!-- =====================================================
+     NEW HERO / OUR WORKS
+===================================================== -->
+
+<section class="works-hero">
+
+    
+
+
+    <!-- BLACK GALLERY PANEL -->
+    <div class="works-panel">
+
+        <!-- Small description -->
+        <div class="works-description">
+
+            <p>
+                KALA combination of
+                statement and simplistic style
+                helps create a look that's as
+                unique as you are.
+            </p>
+
+        </div>
+
+
+        <!-- MAIN TITLE -->
+        <h2 class="works-title">
+    OUR WORKS
+</h2>
+
+<!-- CARDS -->
+<div class="works-gallery" id="worksGallery"></div>
+
+<!-- SLIDER CONTROLS -->
+<div class="works-controls">
+
+    <button class="works-arrow" id="worksPrev">
+        ←
+    </button>
+
+    <button class="works-arrow active" id="worksNext">
+        →
+    </button>
+
+</div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     CATEGORY BAR
+===================================================== -->
+
+<section class="category-bar">
+
+    <div class="category">
+        <i class="fa-regular fa-bottle-droplet"></i>
+        <span>PROFESSIONAL<br>COLLECTIONS</span>
+    </div>
+
+    <div class="category">
+        <i class="fa-solid fa-scissors"></i>
+        <span>MANICURE<br>TOOLS</span>
+    </div>
+
+    <div class="category">
+        <i class="fa-regular fa-circle"></i>
+        <span>GEL<br>SYSTEMS</span>
+    </div>
+
+    <div class="category">
+        <i class="fa-solid fa-vial"></i>
+        <span>PREPARATION<br>ESSENTIALS</span>
+    </div>
+
+    <div class="category">
+        <i class="fa-regular fa-circle-play"></i>
+        <span>ARTIST<br>TUTORIALS</span>
+    </div>
+
+    <div class="category">
+        <i class="fa-regular fa-gift"></i>
+        <span>PREMIUM<br>KITS</span>
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     COLLECTIONS
+===================================================== -->
+
+<section class="collections" id="collections">
+
+    <div class="collection-intro">
+
+        <span>FEATURED COLLECTIONS</span>
+
+        <h2>
+            Refined Shades.<br>
+            Timeless Elegance.
+        </h2>
+
+        <button class="outline-light">
+            EXPLORE COLLECTIONS
+        </button>
+
+    </div>
+
+
+    <div class="collection-card">
+
+        <img src="C:\Chinu_projects\Desktop\FS_1_\nail_art\trial\02.jpg">
+
+        <div class="collection-name">
+            NEUTRAL LUXE<br>
+            COLLECTION
+        </div>
+
+    </div>
+
+
+    <div class="collection-card">
+
+        <img src="C:\Chinu_projects\Desktop\FS_1_\nail_art\trial\04.jpg">
+
+        <div class="collection-name">
+            SOFT ROSE<br>
+            COLLECTION
+        </div>
+
+    </div>
+
+
+    <div class="collection-card">
+
+        <img src="C:\Chinu_projects\Desktop\FS_1_\nail_art\trial\8.jpg">
+
+        <div class="collection-name">
+            MILKY NUDE<br>
+            COLLECTION
+        </div>
+
+    </div>
+
+
+    <div class="collection-card">
+
+        <img src="C:\Chinu_projects\Desktop\FS_1_\nail_art\trial\05.jpg">
+
+        <div class="collection-name">
+            CLASSIC FRENCH<br>
+            COLLECTION
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FEATURED PRODUCTS
+===================================================== -->
+
+<!-- ================= PROFESSIONAL TOOLS ================= -->
+<section class="professional-tools-section">
+
+    <div class="tools-banner">
+
+        <!-- LEFT BANNER -->
+        <div class="tool-banner-card tool-banner-left">
+
+            <div class="tool-banner-content">
+                <span class="tool-small-title">PROFESSIONAL TOOLS</span>
+
+                <h2>
+                    Precision in<br>
+                    Every Detail.
+                </h2>
+
+                <a href="#tools" class="tool-shop-btn">
+                    SHOP TOOLS
+                </a>
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT BANNER -->
+        <div class="tool-banner-card tool-banner-right">
+
+            <div class="tool-banner-content">
+                <span class="tool-small-title">GEL SYSTEMS</span>
+
+                <h2>
+                    Long Wear.<br>
+                    Flawless Finish.
+                </h2>
+
+                <a href="#gels" class="tool-shop-btn">
+                    SHOP GELS
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================================
+     BEFORE / AFTER + TESTIMONIAL
+===================================================== -->
+
+<section class="results-section">
+
+    <div class="before-after">
+
+        <span>BEFORE & AFTER</span>
+
+        <div class="comparison">
+
+            <div class="comparison-image">
+
+                <img src="C:\Chinu_projects\Desktop\FS_1_\nail_art\trial\before.jpg">
+
+                <label>BEFORE</label>
+
+            </div>
+
+
+            <div class="comparison-image">
+
+                <img src="C:\Chinu_projects\Desktop\FS_1_\nail_art\trial\after.jpg">
+
+                <label>AFTER</label>
+
+            </div>
+
+            <button class="compare-arrow">
+                →
+            </button>
+
+        </div>
+
+        <p>See the transformation.</p>
+
+    </div>
+
+
+
+    <div class="testimonial">
+
+        <span>LOVED BY PROFESSIONALS</span>
+
+        <div class="stars">
+            ★★★★★
+        </div>
+
+        <blockquote>
+            "KALA products deliver salon
+            quality every time. My clients
+            love the results!"
+        </blockquote>
+
+        <h4>— JESSICA M.</h4>
+
+        <small>Nail Artist</small>
+
+        <div class="testimonial-image"></div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     TRUST BAR
+===================================================== -->
+
+<section class="trust-bar">
+
+    <div class="trust-item">
+
+        <i class="fa-solid fa-truck"></i>
+
+        <span>
+            FAST & RELIABLE<br>
+            SHIPPING
+        </span>
+
+    </div>
+
+
+    <div class="trust-item">
+
+        <i class="fa-regular fa-award"></i>
+
+        <span>
+            PROFESSIONAL<br>
+            QUALITY
+        </span>
+
+    </div>
+
+
+    <div class="trust-item">
+
+        <i class="fa-solid fa-lock"></i>
+
+        <span>
+            SECURE<br>
+            PAYMENTS
+        </span>
+
+    </div>
+
+
+    <div class="trust-item">
+
+        <i class="fa-regular fa-headphones"></i>
+
+        <span>
+            DEDICATED<br>
+            SUPPORT
+        </span>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     NEWSLETTER
+===================================================== -->
+
+<section class="newsletter">
+
+    <div class="newsletter-brand">
+
+        <div class="logo-circle">
+            LN
+        </div>
+
+        <div>
+
+            <h2>KALA</h2>
+
+            <span>
+                ELEVATE YOUR NAIL ARTISTRY
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="social-icons">
+
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        <i class="fa-brands fa-youtube"></i>
+        <i class="fa-brands fa-pinterest"></i>
+
+    </div>
+
+
+    <div class="newsletter-content">
+
+        <span>JOIN THE LUXE LIST</span>
+
+        <p>
+            Be the first to discover new collections,
+            exclusive offers, and nail inspiration.
+        </p>
+
+        <div class="email-form">
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+            >
+
+            <button onclick="subscribe()">
+                SUBSCRIBE
+            </button>
+
+        </div>
+
+        <p id="subscribeMessage"></p>
+
+    </div>
+
+
+    <div class="newsletter-image"></div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+<footer id="about">
+
+    <div class="footer-column">
+
+        <h4>SHOP</h4>
+
+        <a>All Products</a>
+        <a>New Arrivals</a>
+        <a>Best Sellers</a>
+        <a>Gift Cards</a>
+
+    </div>
+
+
+    <div class="footer-column">
+
+        <h4>COLLECTIONS</h4>
+
+        <a>Neutral Luxe</a>
+        <a>Soft Rose</a>
+        <a>Milky Nude</a>
+        <a>Classic French</a>
+
+    </div>
+
+
+    <div class="footer-column" id="learn">
+
+        <h4>LEARN</h4>
+
+        <a>Tutorials</a>
+        <a>Nail Guides</a>
+        <a>Tips & Tricks</a>
+        <a>Artist Academy</a>
+
+    </div>
+
+
+    <div class="footer-column">
+
+        <h4>ABOUT</h4>
+
+        <a>Our Story</a>
+        <a>Ingredients</a>
+        <a>Sustainability</a>
+        <a>Careers</a>
+
+    </div>
+
+
+    <div class="footer-column">
+
+        <h4>HELP</h4>
+
+        <a>FAQ</a>
+        <a>Shipping</a>
+        <a>Returns</a>
+        <a>Contact Us</a>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            © 2026 KALA
+        </span>
+
+        <span>
+            All Rights Reserved
+        </span>
+
+        <div>
+            <a>Privacy Policy</a>
+            <a>Terms of Service</a>
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- =====================================================
+     CART POPUP
+===================================================== -->
+
+<div class="cart-popup" id="cartPopup">
+
+    <div class="cart-content">
+
+        <button onclick="closeCart()">×</button>
+
+        <h2>Your Cart</h2>
+
+        <p id="cartText">
+            2 items currently in your cart.
+        </p>
+
+        <button class="primary-button">
+            VIEW CART →
+        </button>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
